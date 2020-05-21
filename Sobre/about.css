@@ -43,9 +43,10 @@ body {
         display: block;
     }
 
-    .conteúdo {
+    .conteudo {
         width: 50%;
     }
+
 }
 
 @media screen and (min-width: 802px){
@@ -60,15 +61,13 @@ body {
     }
 }
 
-.conteúdo{
+.conteudo{
     width: 100%;
     height: auto;
-    background-image: url(fotofrutas.jpg);
+    background-image: url(../Imagens/fotofrutas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    
 }
 
 .text {
@@ -76,8 +75,7 @@ body {
     border-radius: 50px;
     border: solid #34413a 5px;
     margin: 0px 0px 0px 30px;
-    padding: 20px 0px 20px 0px;
-    top: 3em;
+    padding: 0px;
     left: -1em;
     z-index: 3;
     position: relative;
@@ -93,7 +91,8 @@ h1 {
     border: solid #34413a 5px;
     padding: 15px 16px 15px 10px;
     margin-left: 20px;
-    width: 10em;
+    width: 10%;
+    margin-bottom: 100px;
 }
 
 p {
@@ -101,7 +100,25 @@ p {
     color: #f1fcc5;
     font-size: 25px;
     text-align: justify;
-    padding: 20px 60px;
+    padding: 20px;
     margin: 20px;
 }
 
+@media screen and (max-width: 800px){
+    h1{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    p{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    p{
+        padding: 5px;
+    }
+}

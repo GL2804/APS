@@ -37,7 +37,7 @@ body {
     background-color: #8a9c40;
 }
 
-@media (min-width: 300px) and (max-width: 800px){
+@media (min-width:300px) and (max-width: 800px){
 
     .menu ul{
         display: block;
@@ -46,6 +46,7 @@ body {
     .conteúdo {
         width: 50%;
     }
+    
 }
 
 @media screen and (min-width: 802px){
@@ -60,24 +61,49 @@ body {
     }
 }
 
-/* @media screen and (max-width: 379px){
-
-} */
-
 @media screen and (max-width: 412px){
-    div h1{
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
+    .titulo{
+        width: 45vh;
+        font-size: 22px;
+        text-align: center;
+    }
+    .botoes h3{
+        font-size: 16px;
+    text-align: center;
     }
 
+}
+
+@media screen and (max-width: 321px){
+    .container1{
+        height: 110px;
+    }
+    .container1 h2{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .botoes{
+        margin-top: 23px;
+    }
+    .botoes h4{
+        margin-top: -20px;
+    }
+    .c2{
+        font-size: 19px;
+        padding: 10px;
+    }
+    .container2{
+        width: 100%;
+    }
 
 }
+
 
 .conteúdo{
     width: 100%;
     height: auto;
-    background-image: url(fotofrutas.jpg);
+    background-image: url(../Imagens/fotofrutas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,15 +124,19 @@ body {
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    top: 1em;
-    font-size: 30px;
-    color: #f1fcc5;
-    background-color: #8a9c40;
-    border: solid #34413a 5px;
-    padding: 15px 16px 15px 10px;
-    margin-left: 20px;
-    width: 10em;
+
+}
+
+.titulo{
+        position: relative;
+        top: 1em;
+        font-size: 15px;
+        color: #f1fcc5;
+        background-color: #8a9c40;
+        border: solid #34413a 5px;
+        padding: 15px 16px 15px 10px;
+        margin-left: 20px;
+        width: 30%;
 }
 
 h2 {
@@ -145,6 +175,7 @@ h4 {
     z-index: 2;
     transition: ease-out;
     transition-duration: 0.3s;
+    height: 42vh;
 }
 
 div.botoes:hover {
@@ -157,23 +188,40 @@ div.botoes:hover {
     border-radius: 50px;
     border: solid #34413a 5px;
     top: 0em;
-    left: 2em;
-    width: 20em;
+    margin-left: 30px;
+    width: 30%;
     margin-top: 15px;
-    padding-left: 20px;
     z-index: 3;
     position: relative;
+    margin-top: 45px;
 }
 
 .c2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #f1fcc5;
     text-align: center;
-    padding-left: -20px;
-    margin-left: 2px;
 }
 
 div.container2:hover {
     background-color: #d44646;
 }
 
+@media screen and (max-width: 865px){
+    .container2{
+        width: 50% ;
+    }
+    .titulo{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 548px){
+    .container2{
+        width: 80% ;
+    }
+    .titulo{
+        width: 80%;
+        padding-left: 0px;
+        text-align: center;
+    }
+}
